@@ -13,5 +13,6 @@ for element in soup.findAll(attrs='blog-card__content-wrapper'):
     name = element.find('h2')
     if name not in results:
         results.append(name.text)
-df = pd.DataFrame({'Names': results})
-df.to_csv('names.csv', index=False, encoding='utf-8')
+#df = pd.DataFrame({'Names': results})
+#df.to_csv('names.csv', index=False, encoding='utf-8')
+print(results)
