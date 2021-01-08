@@ -1,6 +1,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
+import csv
 
 driver = webdriver.Chrome(executable_path='C:/Users/Mwils/Desktop/New folder/chromedriver.exe')
 driver.get('https://oxylabs.io/blog')
