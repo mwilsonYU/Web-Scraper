@@ -7,7 +7,7 @@ driver.get('https://oxylabs.io/blog')
 results = []
 content = driver.page_source
 soup = BeautifulSoup(content)
-driver.quit()
+#driver.quit()
 
 for element in soup.findAll(attrs='blog-card__content-wrapper'):
     name = element.find('h2')
